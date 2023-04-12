@@ -1,0 +1,15 @@
+#include <Servo.h>
+Servo motor;
+
+void setup() {
+  motor.attach(3);
+}
+void loop() {
+
+  motor.write(90);
+  delay(5000);//test for 5 seconds
+  //delay(43200000); //12 hours
+  //delay(21600000); //6 hours
+  motor.write(180);
+  delay(200);
+}
